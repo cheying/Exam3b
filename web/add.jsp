@@ -22,12 +22,7 @@
                 var zip = document.ElementsByName("zip");
                 var emailAddr = document.ElementsByName("emailAddr");
                 var age = document.ElementsByName("age");
-                
-                if(firstName.matches(alphaPattern) && lastName.matches(alphaPattern)))
-                {
-                    return true;
-                    
-                }
+        
             }
         </script>
     </head>
@@ -42,23 +37,23 @@
 
             <div class="main">
                 <p>
-                <form name ="addForm" action ="addCustomers" method="get" onsubmit="return validate();">
+                <form name ="addForm" action ="addCustomers" method="get"">
                     <fieldset>
                         <legend>Add A New Customer</legend>
                         <label class="field">First Name:</label>
-                        <input type="text" name="firstName" value="" />
+                        <input type="text" name="firstName" value="" pattern="^[[A-Za-z-\\s.]]{1,50}$" title="YOU FAIL" />
                         <br>
                         <label class="field">Last Name:</label>
-                        <input type="text" name="lastName" value="" />
+                        <input type="text" name="lastName" value="" pattern="^[[A-Za-z-\\s.]]{1,50}$" title="YOU FAIL"/>
                         <br>
                         <label class="field">Address Line 1:</label>
-                        <input type="text" name="addr1" value="" />
+                        <input type="text" name="addr1" value="" pattern="^[A-Za-z0-9\\s.-]{1,50}$" title="YOU FAIL"/>
                         <br>
                         <label class="field">Address Line 2:</label>
-                        <input type="text" name="addr2" value="" />
+                        <input type="text" name="addr2" value="" pattern="^[A-Za-z0-9\\s.-]{1,50}$" title="YOU FAIL"/>
                         <br>
                         <label class="field">City:</label>
-                        <input type="text" name="city" value="" />
+                        <input type="text" name="city" value="" title="YOU FAIL"/>
                         <br>
                         <label class="field">State:</label><br>
                         <select name="state">
@@ -117,13 +112,13 @@
                         </select>
                         <br>
                         <label class="field">Zip:</label>
-                        <input type="text" name="zip" value="" />
+                        <input type="text" name="zip" value="" pattern="^[0-9]{5}$" title="YOU FAIL"/>
                         <br>
                         <label class="field">Email Address:</label>
-                        <input type="text" name="emailAddr" value="" />
+                        <input type="email" name="emailAddr" value="" title="YOU FAIL"/>
                         <br>
                         <label class="field">Age:</label>
-                        <input type="text" name="age" value="" />
+                        <input type="numeric" min="1" max="110" name="age" value="" title="YOU FAIL"/>
                         <br>
                         <div class="center">
                             <input type="submit" name="Submit" value="Submit" />

@@ -14,7 +14,7 @@ import model.Customers;
 
 /**
  *
- * @author Christine Heying
+ * @author Christine
  */
 
 public class ReadRecord {

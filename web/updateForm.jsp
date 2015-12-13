@@ -102,7 +102,7 @@
                         <input type="text" name="zip" value="<%= customer.getZip()%>" />
                         <br>
                         <label class="field">Email Address:</label>
-                        <input type="text" name="emailAddr" value="<%= customer.getEmailAddr()%>" />
+                        <input type="email" name="emailAddr" value="<%= customer.getEmailAddr()%>" />
                         <br>
                         <label class="field">Age:</label>
                         <input type="text" name="age" value="<%= customer.getAge()%>" />

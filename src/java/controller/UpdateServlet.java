@@ -13,7 +13,7 @@ import model.Customers;
 
 /**
  *
- * @author Christine Heying
+ * @author Christine
  */
 
 @WebServlet(name = "UpdateServlet", urlPatterns = {"/updateCustomer"})
