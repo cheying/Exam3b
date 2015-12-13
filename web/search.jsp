@@ -4,7 +4,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Search customers</title>
-        <link href="stylesheet.css" rel="stylesheet" type="text/css" >
+        <link href="style.css" rel="stylesheet" type="text/css" >
     </head>
     <body>
         <div class="wrap"> <!--div to hold other divs-->

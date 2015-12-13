@@ -45,13 +45,13 @@ a:hover{
 }
 
 body{
-    background-color: #D2B48C;
+    background-color: #99CCFF;
 }
 
 fieldset{
     width: 350px;
     border: solid white;
-    background-color: #F08080;
+    background-color: #99CCFF;
 }
 
 legend{
@@ -60,7 +60,7 @@ legend{
     font-size: 20px;
     font-weight: bold;
     color: #696969;
-    background-color: #FFFF99;
+    background-color: #99CCFF;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -83,7 +83,9 @@ input.text{
     text-align: center;
 }
 
-input[readonly] {background-color: gray}
+input[readonly] {
+    background-color: gray
+}
 
 
 .wrap
@@ -126,9 +128,6 @@ input[readonly] {background-color: gray}
 	text-align: left;
 	padding: 25px;
 }
-
-
-
 
 
 .navcontainer { text-align:left; margin-left: 30px; }
