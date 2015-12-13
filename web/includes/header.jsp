@@ -1,6 +1,6 @@
 <div class="header">
     <div class="headerImg">
-        <img src="" alt="" >
+        <img src="includes/logo.png" alt="Customer Logo" >
     </div>
 
     <div class="headerText">

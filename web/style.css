@@ -8,35 +8,35 @@ table{
 
 table{
     
-    background-color: white
+    background-color: #FFFFFF;
 }
 
 th{
-    background-color: #FFFF99;
-    color: #696969;
+    background-color: #3c3d3b;
+    color: #6ea3b5;
     padding: 5px;
 }
 
 td{
-    background-color: #F08080;
+    background-color: #3c3d3b;
     color: white;
     padding: 5px;
 }
 td#delete{
-    color: #696969;
+    color: #6ea3b5;
 }
 
 td#update{
-    color: #696969;
+    color: #6ea3b5;
 }
 
 a:link.delete{
-    color: #696969;
+    color: #6ea3b5;
     text-decoration: none;
 }
 
 a:link.update{
-    color: #696969;
+    color: #6ea3b5;
     text-decoration: none;
 }
 
@@ -45,13 +45,13 @@ a:hover{
 }
 
 body{
-    background-color: #99CCFF;
+    background-color: #9ba393;
 }
 
 fieldset{
     width: 350px;
     border: solid white;
-    background-color: #99CCFF;
+    background-color: #71756c;
 }
 
 legend{
@@ -60,7 +60,7 @@ legend{
     font-size: 20px;
     font-weight: bold;
     color: #696969;
-    background-color: #99CCFF;
+    background-color: #FFFFFF;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -70,7 +70,7 @@ label.field{
     float: left;
     text-align: right;
     width: 125px;
-    background-color: #F08080;
+    background-color: #71756c;
     color: white;
     padding: 1px;
 }
@@ -113,7 +113,7 @@ input[readonly] {
 {
 	height:105px;
 	padding-top:50px;
-	padding-left:25px;
+	padding-left:200px;
 	float:left;
 }
 
