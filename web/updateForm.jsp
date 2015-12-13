@@ -28,22 +28,22 @@
                         <input type="text" name="custID" value="<%= customer.getCustID()%>" readonly/>
                         <br>
                         <label class="field">First Name:</label>
-                        <input type="text" name="firstName" value="<%= customer.getFirstName()%>" />
+                        <input type="text" name="firstName" pattern="[A-Za-z]{1,50}" title="Alphabet characters only" value="<%= customer.getFirstName()%>" />
                         <br>
                         <label class="field">Last Name:</label>
-                        <input type="text" name="lastName" value="<%= customer.getLastName()%>" />
+                        <input type="text" name="lastName" pattern="[A-Za-z]{1,50}" title="Alphabet characters only" value="<%= customer.getLastName()%>" />
                         <br>
                         <label class="field">Address Line 1:</label>
-                        <input type="text" name="addr1" value="<%= customer.getAddr1()%>" />
+                        <input type="text" name="addr1" pattern="[A-Za-z0-9\s.-]{1,50}" title="Do you even know your address?" value="<%= customer.getAddr1()%>" />
                         <br>
                         <label class="field">Address Line 2:</label>
-                        <input type="text" name="addr2" value="<%= customer.getAddr2()%>" />
+                        <input type="text" name="addr2" pattern="[A-Za-z0-9\s.-]{1,50}" title="Do you even know your address?" value="<%= customer.getAddr2()%>" />
                         <br>
                         <label class="field">City:</label>
-                        <input type="text" name="city" value="<%= customer.getCity()%>" />
+                        <input type="text" name="city" title="Make sure to add your city!" value="<%= customer.getCity()%>" />
                         <br>
                         <label class="field">State:</label><br>
-                        <select name="state">
+                        <select required name="state" value="<%= customer.getState()%>">
                             <option value="">Please choose a state...</option>
                             <option value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
@@ -99,13 +99,13 @@
                         </select>
                         <br>
                         <label class="field">Zip:</label>
-                        <input type="text" name="zip" value="<%= customer.getZip()%>" />
+                        <input type="number" name="zip" pattern="[0-9]{5}" title="5 Numerical characters only" value="<%= customer.getZip()%>" />
                         <br>
                         <label class="field">Email Address:</label>
-                        <input type="email" name="emailAddr" value="<%= customer.getEmailAddr()%>" />
+                        <input type="email" name="emailAddr" title="Is this even an email address bruh?" value="<%= customer.getEmailAddr()%>" />
                         <br>
                         <label class="field">Age:</label>
-                        <input type="text" name="age" value="<%= customer.getAge()%>" />
+                        <input type="number" min="1" max="110" name="age" title="Numerical values with a range of 1-110 only" value="<%= customer.getAge()%>" />
                         <br>
                         <div class="center">
                             <input type="submit" name="Submit" value="Update" />

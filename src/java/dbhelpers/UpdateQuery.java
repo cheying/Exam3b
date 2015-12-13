@@ -66,7 +66,6 @@ public class UpdateQuery {
             ps.setString(7, customer.getZip());
             ps.setString(8, customer.getEmailAddr());
             ps.setInt(9, customer.getAge());
-            
             ps.setInt(10, customer.getCustID());
             
             ps.executeUpdate();

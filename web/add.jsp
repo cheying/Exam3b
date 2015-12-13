@@ -5,26 +5,6 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Add A New Customer</title>
         <link href="stylesheet.css" rel="stylesheet" type="text/css" >
-        <script type="text/javascript">
-            function validate()
-            {
-                var alphaPattern = "^[[A-Za-z-\\s.]]{1,50}$";
-                var addrPattern = "^[A-Za-z0-9\\s.-]{1,50}$";
-                var zipPattern = "^[0-9]{5}$";
-                var emailPattern = "^[[a-zA-Z0-9]+[@]{1}[a-zA-Z0-9]+[.][a-z]{2,}]{1,50}$";
-                var agePattern = "^[1-9]+[0-9]{1}$";
-                
-                var firstName = document.ElementsByName("firstName");
-                var lastName = document.ElementsByName("lastName");
-                var addr1 = document.ElementsByName("addr1");
-                var addr2 = document.ElementsByName("addr2");
-                var city = document.ElementsByName("city");
-                var zip = document.ElementsByName("zip");
-                var emailAddr = document.ElementsByName("emailAddr");
-                var age = document.ElementsByName("age");
-        
-            }
-        </script>
     </head>
     <body>
         <div class="wrap"> <!--div to hold other divs-->
@@ -41,22 +21,22 @@
                     <fieldset>
                         <legend>Add A New Customer</legend>
                         <label class="field">First Name:</label>
-                        <input type="text" name="firstName" value="" pattern="^[[A-Za-z-\\s.]]{1,50}$" title="YOU FAIL" />
+                        <input type="text" name="firstName" pattern="[A-Za-z]{1,50}" title="Alphabet characters only" value=""/>
                         <br>
                         <label class="field">Last Name:</label>
-                        <input type="text" name="lastName" value="" pattern="^[[A-Za-z-\\s.]]{1,50}$" title="YOU FAIL"/>
+                        <input type="text" name="firstName" pattern="[A-Za-z]{1,50}" title="Alphabet characters only" value=""/>
                         <br>
                         <label class="field">Address Line 1:</label>
-                        <input type="text" name="addr1" value="" pattern="^[A-Za-z0-9\\s.-]{1,50}$" title="YOU FAIL"/>
+                        <input type="text" name="addr1" value="" pattern="[A-Za-z0-9\s.-]{1,50}" title="Do you even know your address?"/>
                         <br>
                         <label class="field">Address Line 2:</label>
-                        <input type="text" name="addr2" value="" pattern="^[A-Za-z0-9\\s.-]{1,50}$" title="YOU FAIL"/>
+                        <input type="text" name="addr2" value="" pattern="[A-Za-z0-9\s.-]{1,50}" title="Do you even know your address?"/>
                         <br>
                         <label class="field">City:</label>
-                        <input type="text" name="city" value="" title="YOU FAIL"/>
+                        <input type="text" name="city" value="" title="Make sure to add your city!"/>
                         <br>
                         <label class="field">State:</label><br>
-                        <select name="state">
+                        <select required name="state">
                             <option value="">Please choose a state...</option>
                             <option value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
@@ -112,13 +92,13 @@
                         </select>
                         <br>
                         <label class="field">Zip:</label>
-                        <input type="text" name="zip" value="" pattern="^[0-9]{5}$" title="YOU FAIL"/>
+                        <input type="number" name="zip" value="" pattern="[0-9]{5}" title="5 Numerical characters only"/>
                         <br>
                         <label class="field">Email Address:</label>
-                        <input type="email" name="emailAddr" value="" title="YOU FAIL"/>
+                        <input type="email" name="emailAddr" value="" title="Is this even an email address bruh?"/>
                         <br>
                         <label class="field">Age:</label>
-                        <input type="numeric" min="1" max="110" name="age" value="" title="YOU FAIL"/>
+                        <input type="number" min="1" max="110" name="age" value="" title="Numerical values with a range of 1-110 only"/>
                         <br>
                         <div class="center">
                             <input type="submit" name="Submit" value="Submit" />
