@@ -17,7 +17,7 @@
 
             <div class="main">
                 <h1>My Customer Database</h1>
-        
+                <p>Welcome to my customer web application.  Please take a look around.</p>
             </div>
         <%@include file="includes/footer.jsp" %><!--Footer-->
         

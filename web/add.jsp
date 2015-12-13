@@ -18,14 +18,14 @@
             <div class="main">
                 <h1>Add Customers</h1>
                 <p>
-                <form name ="addForm" action ="addCustomers" method="get"">
+                <form name ="addForm" action ="addCustomers" method="get">
                     <fieldset>
                         <legend>Add A New Customer</legend>
                         <label class="field">First Name:</label>
                         <input type="text" name="firstName" pattern="[A-Za-z]{1,50}" title="Alphabet characters only" value=""/>
                         <br>
                         <label class="field">Last Name:</label>
-                        <input type="text" name="firstName" pattern="[A-Za-z]{1,50}" title="Alphabet characters only" value=""/>
+                        <input type="text" name="lastName" pattern="[A-Za-z]{1,50}" title="Alphabet characters only" value=""/>
                         <br>
                         <label class="field">Address Line 1:</label>
                         <input type="text" name="addr1" value="" pattern="[A-Za-z0-9\s.-]{1,50}" title="Do you even know your address?"/>

@@ -73,8 +73,6 @@ public class AddServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        boolean isFirstName, isLastName, isAddr1, isAddr2, isCity, isState, isZip, isEmailAddr, isAge;
-
         //get the data
         String firstName = request.getParameter("firstName");
         String lastName = request.getParameter("lastName");
